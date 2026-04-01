@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Pendataan - Mobile</title>
+    <style>
+        /* --- CSS DALAM SATU FILE --- */
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .login-card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 350px; /* Ukuran pas untuk layar HP */
+            padding: 30px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-section h2 {
+            font-size: 24px;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .header-section p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #444;
+            margin-bottom: 8px;
+            margin-left: 4px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 14px;
+            border: 1.5px solid #e1e1e1;
+            border-radius: 12px;
+            font-size: 16px; /* Mencegah auto-zoom di iPhone */
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            border-color: #007bff;
+            background-color: #f8fbff;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .btn-submit:active {
+            transform: scale(0.98); /* Efek klik saat di HP */
+            background-color: #0056b3;
+        }
+
+        /* Tambahan: Footer kecil */
+        .footer-note {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="header-section">
+            <h2>Masuk</h2>
+            <p>Lengkapi data diri Anda di bawah ini</p>
+        </div>
+
+        <form action="2.html" method="GET">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Contoh: Budi Santoso" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nik">NIK</label>
+                <input type="number" id="nik" name="nik" placeholder="Masukkan 16 digit NIK" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Masuk Sekarang</button>
+        </form>
+
+        <div class="footer-note">
+            &copy; 2024 Sistem Pendataan Digital
+        </div>
+    </div>
+
+</body>
+</html>
